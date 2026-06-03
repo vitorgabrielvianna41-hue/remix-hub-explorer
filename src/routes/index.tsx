@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 
 import appHome from "@/assets/app-home.png";
@@ -16,32 +15,9 @@ import dep14 from "@/assets/depoimento-14.png.asset.json";
 import dep15 from "@/assets/depoimento-15.png.asset.json";
 import dep16 from "@/assets/depoimento-16.png.asset.json";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "OrçaPintor Pro — Orçamento de pintura em PDF em 3 minutos" },
-      {
-        name: "description",
-        content:
-          "App para pintores: calcula tinta, massa e material, gera PDF profissional e envia pelo WhatsApp na hora. Funciona offline. Pagamento único.",
-      },
-      { property: "og:title", content: "OrçaPintor Pro" },
-      {
-        property: "og:description",
-        content: "Orçamento de pintor profissional em 3 minutos, direto da obra.",
-      },
-    ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap",
-      },
-    ],
-  }),
-  component: Landing,
-});
+export default function LandingPage() {
+  return <Landing />;
+}
 
 const C = {
   navy: "#0B1020",
