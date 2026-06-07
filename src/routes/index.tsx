@@ -221,7 +221,7 @@ function Hero() {
             letterSpacing: 2,
           }}
         >
-          ⚡ FEITO PARA PINTORES
+          ⚡ FEITO PARA MECÂNICOS
         </span>
         <h1
           style={{
@@ -232,12 +232,12 @@ function Hero() {
             color: C.white,
           }}
         >
-          ORÇAMENTO DE PINTOR EM{" "}
+          ORÇAMENTO DE MECÂNICO EM{" "}
           <span style={{ color: C.yellow }}>PDF</span> EM{" "}
           <span style={{ color: C.yellow }}>3 MINUTOS</span>
         </h1>
         <p style={{ ...heading, marginTop: 22, fontSize: 14, color: C.yellow, letterSpacing: 1 }}>
-          +1.000 PINTORES JÁ USAM
+          +1.000 MECÂNICOS JÁ USAM
         </p>
         <p
           style={{
@@ -249,7 +249,7 @@ function Hero() {
             margin: "10px auto 0",
           }}
         >
-          Gere PDF profissional em minutos e feche mais serviços
+          Gere PDF profissional em minutos e feche mais contratos
         </p>
         <div style={{ marginTop: 28, display: "flex", justifyContent: "center" }}>
           <WistiaVSL mediaId="7v89ovxn74" />
@@ -431,19 +431,19 @@ function Pains() {
   const items = [
     {
       icon: "⏰",
-      t: "Gasta uma hora calculando metros de parede e latas de tinta que o app faria em 2 minutos — e ainda erra a conta",
+      t: "Gasta uma hora calculando peças e mão de obra que o app faria em 2 minutos — e ainda erra a conta",
     },
     {
       icon: "💸",
-      t: "Orça pintura no chute, chega na obra e descobre que faltou tinta — compra no balcão pagando 2x o preço",
+      t: "Orça o serviço no chute, compra peça errada na loja e paga 2x o preço",
     },
     {
       icon: "📱",
-      t: 'Responde "te mando o valor depois" e o cliente já fechou com outro pintor que respondeu PDF em 5 minutos',
+      t: 'Responde "te mando o valor depois" e o cliente já fechou com outro mecânico que respondeu PDF em 5 minutos',
     },
     {
       icon: "💔",
-      t: "Perde serviço para pintor menos experiente só porque ele responde mais rápido e com proposta profissional",
+      t: "Perde serviço para mecânico menos experiente só porque ele responde mais rápido e com proposta profissional",
     },
   ];
   return (
@@ -521,13 +521,13 @@ function HowItWorks() {
       n: "1",
       img: appNovo,
       title: "PREENCHA OS DADOS",
-      desc: "Nome do cliente, tipo de serviço, área em m² e sua margem de lucro desejada.",
+      desc: "Nome do cliente, veículo, tipo de serviço e sua margem de lucro desejada.",
     },
     {
       n: "2",
       img: appOrcamento,
       title: "VEJA SEU LUCRO REAL",
-      desc: "Lista de materiais completa, total a cobrar e lucro líquido. Tudo no seu celular.",
+      desc: "Lista de peças completa, mão de obra, total a cobrar e lucro líquido. Tudo no seu celular.",
     },
     {
       n: "3",
@@ -652,11 +652,11 @@ function HowItWorks() {
 /* ---------- INCLUDED ---------- */
 function Included() {
   const items = [
-    "Cálculo automático de tinta, massa, rolo e material para 6 tipos de serviço",
+    "Cálculo automático de peças e mão de obra para 10 tipos de serviço",
     "Margem de lucro ajustável de 30% a 100% com resultado em tempo real",
     'PDF profissional + botão "Copiar pro WhatsApp" pra enviar na hora',
     "Editor de preços do SEU fornecedor — esqueça tabela defasada",
-    "Funciona offline no celular, tablet ou computador — direto na obra",
+    "Funciona offline no celular, tablet ou computador — direto no serviço",
     "Acesso vitalício + todas as atualizações futuras sem custo adicional",
   ];
   return (
@@ -726,17 +726,17 @@ function Included() {
 function Bonuses() {
   const items = [
     {
-      title: 'Curso "Pintor que Fecha"',
+      title: 'Curso "Mecânico que Fecha"',
       img: bonus1Img,
       value: "R$ 37,00",
     },
     {
-      title: '"Recorte Perfeito em 1 Hora"',
+      title: '"Diagnóstico Rápido em 1 Hora"',
       img: bonus2Img,
       value: "R$ 37,00",
     },
     {
-      title: 'Kit "Pintor Profissional" para Fechar Serviço no WhatsApp',
+      title: 'Kit "Mecânico Profissional" para Fechar Serviço no WhatsApp',
       img: bonus3Img,
       value: "R$ 37,00",
     },
@@ -911,7 +911,7 @@ function Pricing() {
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: "28px 0 0", display: "grid", gap: 12 }}>
               {[
-                { ok: true, t: "App OrçaPintor Pro" },
+                { ok: true, t: "App OrçaMecânico Pro" },
                 { ok: false, t: "Apenas 3 orçamentos por mês" },
                 { ok: false, t: "PDF básico sem personalização" },
                 { ok: false, t: "Sem envio pelo WhatsApp" },
@@ -1012,7 +1012,7 @@ function Pricing() {
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: "28px 0 0", display: "grid", gap: 11 }}>
               {[
-                "APP OrçaPintor Pro",
+                "APP OrçaMecânico Pro",
                 "Cálculo automático de material, custo e lucro",
                 "Orçamento profissional em PDF",
                 "Envio direto pelo WhatsApp",
@@ -1027,9 +1027,9 @@ function Pricing() {
                 </li>
               ))}
               {[
-                "BÔNUS: Curso Pintor que Fecha",
-                "BÔNUS: Recorte Perfeito em 1 Hora",
-                "BÔNUS: Kit Pintor Profissional",
+                "BÔNUS: Curso Mecânico que Fecha",
+                "BÔNUS: Diagnóstico Rápido em 1 Hora",
+                "BÔNUS: Kit Mecânico Profissional",
                 "BÔNUS: Tabela de preços por região",
                 "BÔNUS: Scripts de WhatsApp",
               ].map((t, i) => (
@@ -1093,7 +1093,7 @@ function Testimonials() {
             lineHeight: 1.1,
           }}
         >
-          O QUE OS PINTORES
+          O QUE OS MECÂNICOS
           <br />
           <span style={{ color: C.yellowDeep }}>ESTÃO DIZENDO</span>
         </h2>
@@ -1193,7 +1193,7 @@ function Guarantee() {
           </h2>
           <div style={{ width: 60, height: 4, background: C.yellow, margin: "18px 0", borderRadius: 2 }} />
           <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.6, margin: 0 }}>
-            Experimente o <strong style={{ color: C.ink }}>APP OrçaPintor Pro</strong> com total tranquilidade.
+            Experimente o <strong style={{ color: C.ink }}>APP OrçaMecânico Pro</strong> com total tranquilidade.
             Se por qualquer motivo você decidir que não é para você — sem burocracia, sem questionamento,
             devolvemos cada centavo. Teste sem nenhum risco.
           </p>
@@ -1219,7 +1219,7 @@ function Author() {
               lineHeight: 1.1,
             }}
           >
-            QUEM CRIOU O <span style={{ color: C.yellowDeep }}>ORÇAPINTOR PRO?</span>
+            QUEM CRIOU O <span style={{ color: C.yellowDeep }}>ORÇAMECÂNICO PRO?</span>
           </h2>
         </div>
 
@@ -1248,7 +1248,7 @@ function Author() {
           >
             <img
               src={carlosAsset.url}
-              alt="Carlos Eduardo - Pintor há +14 anos"
+              alt="Carlos Eduardo - Mecânico há +14 anos"
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
             />
             <div
@@ -1262,7 +1262,7 @@ function Author() {
             >
               <div style={{ ...heading, fontSize: 18 }}>Carlos Eduardo</div>
               <div style={{ ...heading, color: C.yellow, fontSize: 11, letterSpacing: 1.5, marginTop: 4 }}>
-                PINTOR HÁ +14 ANOS
+                MECÂNICO HÁ +14 ANOS
               </div>
             </div>
           </div>
@@ -1272,22 +1272,22 @@ function Author() {
             <h3 style={{ ...heading, fontSize: 32, color: C.ink, margin: "10px 0 4px" }}>ME CHAMO</h3>
             <h3 style={{ ...heading, fontSize: 32, color: C.ink, margin: 0 }}>CARLOS EDUARDO</h3>
             <div style={{ ...heading, color: C.yellowDeep, fontSize: 13, marginTop: 12, letterSpacing: 0.5 }}>
-              Pintor Residencial e Comercial há +14 anos
+              Mecânico Automotivo Autônomo há +14 anos
             </div>
 
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 20 }}>
-              Durante anos sofri com o mesmo problema: chegava em casa depois de um dia longo de obra e ainda
-              precisava calcular orçamento no papel. Errava a conta de tinta, esquecia massa, e no final do
+              Durante anos sofri com o mesmo problema: chegava em casa depois de um dia longo de serviço e ainda
+              precisava calcular orçamento no papel. Errava a conta de peças, esquecia itens, e no final do
               serviço descobria que meu lucro tinha sumido.
             </p>
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 14 }}>
-              Já perdi obra boa porque demorei dois dias para responder. Já comprei material dobrado no balcão
-              porque esqueci de calcular direito. Já fechei serviço por um preço que mal pagou o material — sem
+              Já perdi serviço bom porque demorei dois dias para responder. Já comprei peça dobrada na loja
+              porque esqueci de calcular direito. Já fechei serviço por um preço que mal pagou as peças — sem
               contar minha mão de obra.
             </p>
             <p style={{ color: C.inkSoft, fontSize: 15, lineHeight: 1.7, marginTop: 14 }}>
-              Foi aí que criei o <strong style={{ color: C.ink }}>OrçaPintor Pro</strong> — uma ferramenta simples
-              que qualquer pintor consegue usar no celular, na obra, em 3 minutos. Hoje uso em todos os meus serviços
+              Foi aí que criei o <strong style={{ color: C.ink }}>OrçaMecânico Pro</strong> — uma ferramenta simples
+              que qualquer mecânico consegue usar no celular, na oficina, em 3 minutos. Hoje uso em todos os meus serviços
               e trabalho com previsibilidade, sem chute e sem prejuízo.
             </p>
 
@@ -1416,8 +1416,8 @@ function FinalCTA() {
           SEU PRÓXIMO CLIENTE ESTÁ ESPERANDO UM <span style={{ color: C.yellow }}>ORÇAMENTO AGORA</span>
         </h2>
         <p style={{ color: "rgba(255,255,255,0.8)", fontSize: 15, lineHeight: 1.55, marginTop: 18 }}>
-          Enquanto você lê isso, tem um pintor que já mandou o PDF. Por menos de R$20 você nunca mais perde
-          obra por demora.
+          Enquanto você lê isso, tem um mecânico que já mandou o PDF. Por menos de R$20 você nunca mais perde
+          serviço por demora.
         </p>
         <CTAButton label="⚡ GARANTIR MEU ACESSO AGORA" style={{ marginTop: 26 }} />
         <p style={{ marginTop: 14, fontSize: 12, color: "rgba(255,255,255,0.6)" }}>
