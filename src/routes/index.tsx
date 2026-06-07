@@ -1329,8 +1329,8 @@ function FAQ() {
       a: "Você tem 30 dias para pedir reembolso total, sem precisar explicar nada. Zero risco.",
     },
     {
-      q: "Precisa de internet na obra?",
-      a: "Não. O app funciona offline. Você orça direto na obra mesmo sem sinal de celular.",
+      q: "Precisa de internet na oficina?",
+      a: "Não. O app funciona offline. Você orça direto na oficina mesmo sem sinal de celular.",
     },
     {
       q: "Qual a diferença entre os planos?",
